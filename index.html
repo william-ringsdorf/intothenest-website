@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Into the Nest · Biophilic home design for the people who live there</title>
+<meta name="description" content="Into the Nest helps homeowners design rooms that suit the people living in them. The online course Transform Your Home with Biophilic Design, and the weekly Heartsease letter, from William Ringsdorf, home designer with thirty years in architectural practice.">
+<link rel="canonical" href="https://intothenest.net/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Into the Nest">
+<meta property="og:title" content="Into the Nest · Biophilic home design">
+<meta property="og:description" content="A home that feels right is designed from how you live, not from other people's pictures. Course, weekly letter, contact.">
+<meta property="og:url" content="https://intothenest.net/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Into the Nest · Biophilic home design">
+<meta name="twitter:description" content="A home that feels right is designed from how you live, not from other people's pictures. Course, weekly letter, contact.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+  :root{
+    --sage:#6B9080;
+    --sage-dark:#4F7263;
+    --gold:#C9A646;
+    --cream:#F5F0E8;
+    --cream-deep:#EDE5D6;
+    --ink:#333333;
+    --ink-soft:#5A5A5A;
+    --white:#FFFFFF;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:Arial,Helvetica,sans-serif;font-size:18px;line-height:1.65;color:var(--ink);background:var(--cream);}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px;}
+  section{padding:96px 0;}
+  h1,h2,h3{font-weight:700;line-height:1.12;color:var(--ink);}
+  h1{font-size:clamp(36px,5.6vw,60px);letter-spacing:-0.5px;}
+  h2{font-size:clamp(28px,3.8vw,42px);margin-bottom:28px;}
+  h3{font-size:22px;margin-bottom:10px;}
+  p{max-width:660px;margin-bottom:18px;}
+  p:last-child{margin-bottom:0;}
+  a{color:inherit;}
+  .eyebrow{font-size:14px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--sage-dark);margin-bottom:22px;}
+  .btn{display:inline-block;background:var(--sage);color:var(--white);font-weight:700;font-size:17px;text-decoration:none;padding:15px 30px;border:none;border-radius:2px;cursor:pointer;}
+  .btn:hover{background:var(--sage-dark);}
+  .textlink{font-weight:700;font-size:17px;text-decoration:underline;text-underline-offset:5px;text-decoration-color:var(--gold);}
+  .sage{background:var(--sage);color:var(--white);}
+  .sage h2,.sage h3,.sage .eyebrow{color:var(--white);}
+  .sage .eyebrow{color:var(--cream);}
+  .deep{background:var(--cream-deep);}
+  .white{background:var(--white);}
+
+  nav{padding:22px 0;background:var(--cream);}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;}
+  .wordmark{display:flex;align-items:center;gap:10px;font-weight:700;font-size:21px;text-decoration:none;letter-spacing:0.2px;}
+  .wordmark svg{width:28px;height:28px;}
+  .navlinks{display:flex;align-items:center;gap:26px;flex-wrap:wrap;}
+  .navlinks a{font-size:15px;font-weight:700;text-decoration:none;}
+  .navlinks a:hover{color:var(--sage-dark);}
+
+  .hero{padding:96px 0 110px;}
+  .hero h1{max-width:820px;margin-bottom:30px;}
+  .hero .sub{font-size:20px;max-width:620px;margin-bottom:40px;color:var(--ink-soft);}
+  .hero .actions{display:flex;align-items:center;gap:30px;flex-wrap:wrap;}
+  .rule{width:64px;height:4px;background:var(--gold);margin:0 0 30px;}
+
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
+  .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin:36px 0;}
+  .card{background:var(--white);padding:26px 26px 22px;border-top:4px solid var(--gold);}
+  .card p{font-size:16px;color:var(--ink-soft);margin:0;}
+  ol.lessons{counter-reset:l;list-style:none;max-width:660px;margin:30px 0 36px;}
+  ol.lessons li{counter-increment:l;display:grid;grid-template-columns:44px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid rgba(51,51,51,0.12);}
+  ol.lessons li::before{content:counter(l,decimal-leading-zero);font-weight:700;color:var(--sage-dark);}
+  ul.plain{list-style:none;max-width:660px;margin:0 0 30px;}
+  ul.plain li{padding:8px 0 8px 28px;position:relative;}
+  ul.plain li::before{content:"";position:absolute;left:0;top:17px;width:12px;height:12px;background:var(--gold);border-radius:50%;}
+  .proof{font-size:16px;color:var(--ink-soft);margin:0 0 30px;}
+  .small{font-size:15px;color:var(--ink-soft);margin-top:14px;}
+
+  .about .two{align-items:center;}
+  .portrait{background:var(--sage);aspect-ratio:4/5;display:flex;align-items:flex-end;padding:22px;color:var(--white);font-size:15px;max-width:360px;}
+
+  .form-shell{background:var(--white);padding:32px;max-width:640px;border-top:4px solid var(--sage);}
+  .form-shell iframe{width:100%;border:none;min-height:560px;}
+  .form-fallback p{margin-bottom:12px;}
+
+  footer{padding:56px 0 40px;background:var(--cream-deep);font-size:15px;color:var(--ink-soft);}
+  footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;}
+  footer a{text-decoration:none;}
+  footer a:hover{text-decoration:underline;}
+  footer ul{list-style:none;display:flex;gap:22px;flex-wrap:wrap;}
+
+  @media (max-width:760px){
+    section{padding:70px 0;}
+    .hero{padding:64px 0 76px;}
+    .two,.cards{grid-template-columns:1fr;gap:28px;}
+    .portrait{max-width:100%;aspect-ratio:3/2;}
+    .form-shell{padding:22px;}
+    .navlinks{gap:16px;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="wordmark" href="#top" aria-label="Into the Nest, home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#6B9080"/><path d="M16 7c-4 4-7 7-7 11a7 7 0 0 0 14 0c0-4-3-7-7-11z" fill="#F5F0E8"/><path d="M16 11v12" stroke="#6B9080" stroke-width="1.6" stroke-linecap="round"/></svg>
+      Into the Nest
+    </a>
+    <div class="navlinks">
+      <a href="#course">The course</a>
+      <a href="#about">About</a>
+      <a href="https://www.heartseasehome.com" target="_blank" rel="noopener">Heartsease letter</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Into the Nest · Biophilic home design</p>
+    <h1>You already know what your home needs. Biophilic design is how you learn to listen to it.</h1>
+    <p class="sub">Light, materials, plants, colour, and the rooms you actually sit in. A beginner's course for homeowners and renters who want a home that feels right, from thirty years of designing homes that suit the people in them.</p>
+    <div class="actions">
+      <a class="btn" href="#course">See the course</a>
+      <a class="textlink" href="https://www.heartseasehome.com" target="_blank" rel="noopener">Read the weekly letter</a>
+    </div>
+  </div>
+</section>
+
+<section class="white">
+  <div class="wrap two">
+    <div>
+      <div class="rule"></div>
+      <h2>Saved a thousand pictures. Home still feels slightly off.</h2>
+    </div>
+    <div>
+      <p>Most people decorate by imitation. They save other people's rooms, buy the odd thing, and are quietly disappointed when it arrives. The pictures are not the problem. The method is.</p>
+      <p>The information you need is already in your own four walls: where you sit at 7am, which room you avoid, where the light lands in the afternoon. Biophilic design is the discipline of noticing that, and then working with it. Most of what changes a room costs very little.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sage">
+  <div class="wrap two">
+    <div>
+      <p class="eyebrow">What biophilic design is</p>
+      <h2>Nature as pattern, not decoration</h2>
+    </div>
+    <div>
+      <p>Biophilia means a love of living things. Biophilic design brings that into a home in ways that work on the body: daylight that reaches further into a room, materials with grain and weight, plants placed where you look rather than where there is a gap, colour taken from outside the window.</p>
+      <p>It is not "add plants". It is light, material and rhythm, arranged for the people who live there.</p>
+    </div>
+  </div>
+</section>
+
+<section id="course">
+  <div class="wrap">
+    <p class="eyebrow">The course</p>
+    <h2>Transform Your Home with Biophilic Design: A Beginner's Guide</h2>
+    <p>Ten lessons, just under three hours of video, three short ebooks included. No design training needed. Watch on any device, at your own pace.</p>
+
+    <div class="cards">
+      <div class="card"><h3>Read a room first</h3><p>Sit in it and read it before you buy anything for it. The room audit, from Lesson 1 onwards.</p></div>
+      <div class="card"><h3>More daylight</h3><p>Get more from the windows you already have, and put the light where you need it.</p></div>
+      <div class="card"><h3>Plants and materials</h3><p>Choose plants and natural materials that suit the room and the people in it, and keep them alive.</p></div>
+      <div class="card"><h3>A plan for the whole home</h3><p>Build a palette from what is outside the window, make one restorative corner on a small budget, then put it together.</p></div>
+    </div>
+
+    <h3>The ten lessons</h3>
+    <ol class="lessons">
+      <li>Reconnecting with nature in your home: the fundamentals</li>
+      <li>The principles behind biophilic design, and why they work on us</li>
+      <li>Bringing natural elements into the rooms you have</li>
+      <li>Daylight: getting more from the windows you already own</li>
+      <li>Plants and greenery: choosing, placing, keeping alive</li>
+      <li>Natural materials and textures</li>
+      <li>Colour palettes and patterns taken from nature</li>
+      <li>Spaces for rest and recovery</li>
+      <li>Biophilic design on a budget</li>
+      <li>Putting it all together: your biophilic home</li>
+    </ol>
+
+    <h3>Who it is for</h3>
+    <p>Homeowners and renters with no design background who want a calmer and healthier home, and are willing to do a little noticing before a little buying. Not for anyone after quick styling tips.</p>
+    <p class="proof">Rated 4.6 out of 5 by its first students on Udemy.</p>
+    <a class="btn" href="https://www.udemy.com/course/transform-your-home-with-biophilic-design-beginners-guide/" target="_blank" rel="noopener">Enrol on Udemy</a>
+    <p class="small">Prefer to ask first? <a href="#contact">Use the form below</a>.</p>
+  </div>
+</section>
+
+<section id="about" class="deep about">
+  <div class="wrap two">
+    <div>
+      <p class="eyebrow">Who is behind this</p>
+      <h2>William Ringsdorf</h2>
+      <p>Thirty years in architectural practice in the UK and Germany, more than 750 homes designed, from social housing to one-off houses. A childhood on building sites and a lasting fondness for the treehouses in the old Tarzan films. Fourteen years of annual stays in Kerala shaped a conviction that a home is an instrument of wellbeing, not a gallery.</p>
+      <p>Into the Nest is where that experience is turned towards homeowners: the course, the weekly Heartsease letter, and the occasional conversation about a home that does not feel right yet.</p>
+      <p><a class="textlink" href="https://www.heartseasehome.com" target="_blank" rel="noopener">Read Heartsease, the weekly letter</a></p>
+    </div>
+    <div class="portrait" aria-hidden="true">Home designer · 30 years in architectural practice · UK and Germany</div>
+  </div>
+</section>
+
+<section id="contact" class="white">
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h2>Get in touch</h2>
+    <p>A question about the course, a home that puzzles you, or anything else. Replies come from William directly, usually within a working day or two.</p>
+    <div class="form-shell">
+      <!-- GHL form embed goes here once the form exists in the new sub-account. Replace the fallback block below with the iframe. -->
+      <div class="form-fallback">
+        <p>The contact form is on its way. In the meantime, write to <a href="mailto:wr@intothenest.net">wr@intothenest.net</a>.</p>
+      </div>
+    </div>
+    <p class="small">Your details are used only to reply to you. No list, no newsletter, unless you ask for one. <a href="privacy.html">Privacy</a>.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>Into The Nest Ltd · <a href="mailto:wr@intothenest.net">wr@intothenest.net</a></div>
+    <ul>
+      <li><a href="https://www.heartseasehome.com" target="_blank" rel="noopener">Heartsease</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>
