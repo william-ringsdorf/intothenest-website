@@ -107,7 +107,6 @@
 
   .form-shell{background:var(--white);padding:32px;max-width:640px;border-top:4px solid var(--sage);}
   .form-shell iframe{width:100%;border:none;min-height:560px;}
-  .form-fallback p{margin-bottom:12px;}
 
   footer{padding:56px 0 40px;background:var(--cream-deep);font-size:15px;color:var(--ink-soft);}
   footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;}
@@ -299,10 +298,27 @@
     <h2>Get in touch</h2>
     <p>A question about the course, a home that puzzles you, or anything else. Replies come from William directly, usually within a working day or two.</p>
     <div class="form-shell">
-      <!-- GHL form embed goes here once the form exists in the new sub-account. Replace the fallback block below with the iframe. -->
-      <div class="form-fallback">
-        <p>The contact form is on its way. In the meantime, write to <a href="mailto:wr@intothenest.net">wr@intothenest.net</a>.</p>
-      </div>
+      <iframe
+        src="https://api.leadconnectorhq.com/widget/form/2ATXmIifdonnIrW8LvPe"
+        style="width:100%;height:100%;border:none;border-radius:0"
+        id="inline-2ATXmIifdonnIrW8LvPe"
+        data-layout="{'id':'INLINE'}"
+        data-trigger-type="alwaysShow"
+        data-trigger-value=""
+        data-activation-type="alwaysActivated"
+        data-activation-value=""
+        data-deactivation-type="neverDeactivate"
+        data-deactivation-value=""
+        data-form-name="Into the Nest contact"
+        data-height="undefined"
+        data-layout-iframe-id="inline-2ATXmIifdonnIrW8LvPe"
+        data-form-id="2ATXmIifdonnIrW8LvPe"
+        data-cookie-consent="true"
+        data-cookie-consent-provider="auto"
+        title="Into the Nest contact"
+        loading="lazy"></iframe>
+      <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+      <noscript><p>The form needs JavaScript. Write to <a href="mailto:wr@intothenest.net">wr@intothenest.net</a> instead.</p></noscript>
     </div>
     <p class="small">Your details are used only to reply to you. No list, no newsletter, unless you ask for one. <a href="privacy.html">Privacy</a>.</p>
   </div>
