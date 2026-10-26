@@ -11,7 +11,9 @@
 <meta property="og:title" content="Into the Nest · Biophilic home design">
 <meta property="og:description" content="A home that feels right is designed from how you live, not from other people's pictures. Course, weekly letter, contact.">
 <meta property="og:url" content="https://intothenest.net/">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://intothenest.net/img/course-still.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://intothenest.net/img/course-still.jpg">
 <meta name="twitter:title" content="Into the Nest · Biophilic home design">
 <meta name="twitter:description" content="A home that feels right is designed from how you live, not from other people's pictures. Course, weekly letter, contact.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -66,6 +68,25 @@
   .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin:36px 0;}
   .card{background:var(--white);padding:26px 26px 22px;border-top:4px solid var(--gold);}
   .card p{font-size:16px;color:var(--ink-soft);margin:0;}
+  .card svg{width:40px;height:40px;display:block;margin-bottom:16px;stroke:var(--sage-dark);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
+
+  .course-intro{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center;margin-bottom:8px;}
+  .still{display:block;position:relative;}
+  .still img{display:block;width:100%;height:auto;border-top:4px solid var(--gold);}
+  .still span{position:absolute;left:0;bottom:0;background:var(--ink);color:var(--white);font-size:14px;font-weight:700;padding:8px 14px;}
+
+  .rating{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:0 0 30px;font-size:16px;color:var(--ink-soft);}
+  .rating strong{font-size:30px;color:var(--ink);line-height:1;}
+  .stars{display:inline-flex;gap:2px;}
+  .stars svg{width:20px;height:20px;}
+
+  .quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:36px;}
+  .quote{background:var(--white);padding:30px 28px 24px;border-left:4px solid var(--gold);position:relative;}
+  .quote p{font-size:17px;margin:0 0 16px;max-width:none;}
+  .quote p::before{content:"\201C";}
+  .quote p::after{content:"\201D";}
+  .quote cite{font-style:normal;font-size:15px;color:var(--ink-soft);display:flex;align-items:center;gap:10px;}
+  .quote cite .stars svg{width:14px;height:14px;}
   ol.lessons{counter-reset:l;list-style:none;max-width:660px;margin:30px 0 36px;}
   ol.lessons li{counter-increment:l;display:grid;grid-template-columns:44px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid rgba(51,51,51,0.12);}
   ol.lessons li::before{content:counter(l,decimal-leading-zero);font-weight:700;color:var(--sage-dark);}
@@ -76,7 +97,9 @@
   .small{font-size:15px;color:var(--ink-soft);margin-top:14px;}
 
   .about .two{align-items:center;}
-  .portrait{background:var(--sage);aspect-ratio:4/5;display:flex;align-items:flex-end;padding:22px;color:var(--white);font-size:15px;max-width:360px;}
+  .portrait{position:relative;aspect-ratio:4/5;max-width:360px;background:var(--sage);}
+  .portrait img{display:block;width:100%;height:100%;object-fit:cover;}
+  .portrait span{position:absolute;left:0;right:0;bottom:0;background:rgba(51,51,51,0.82);color:var(--white);font-size:15px;padding:14px 18px;}
 
   .form-shell{background:var(--white);padding:32px;max-width:640px;border-top:4px solid var(--sage);}
   .form-shell iframe{width:100%;border:none;min-height:560px;}
@@ -91,8 +114,9 @@
   @media (max-width:760px){
     section{padding:70px 0;}
     .hero{padding:64px 0 76px;}
-    .two,.cards{grid-template-columns:1fr;gap:28px;}
+    .two,.cards,.quotes,.course-intro{grid-template-columns:1fr;gap:28px;}
     .portrait{max-width:100%;aspect-ratio:3/2;}
+    .portrait img{object-position:50% 20%;}
     .form-shell{padding:22px;}
     .navlinks{gap:16px;}
   }
@@ -159,13 +183,41 @@
   <div class="wrap">
     <p class="eyebrow">The course</p>
     <h2>Transform Your Home with Biophilic Design: A Beginner's Guide</h2>
-    <p>Ten lessons, just under three hours of video, three short ebooks included. No design training needed. Watch on any device, at your own pace.</p>
+    <div class="course-intro">
+      <div>
+        <p>Ten lessons, just under three hours of video, three short ebooks included. No design training needed. Watch on any device, at your own pace.</p>
+        <div class="rating" aria-label="Rated 4.6 out of 5 from 19 ratings on Udemy">
+          <strong>4.6</strong>
+          <span class="stars" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path fill="#C9A646" d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24"><path fill="#C9A646" d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24"><path fill="#C9A646" d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24"><path fill="#C9A646" d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="60%" stop-color="#C9A646"/><stop offset="60%" stop-color="#EDE5D6"/></linearGradient></defs><path fill="url(#half)" d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+          </span>
+          <span>out of 5 from 19 ratings on Udemy</span>
+        </div>
+        <a class="btn" href="https://www.udemy.com/course/transform-your-home-with-biophilic-design-beginners-guide/" target="_blank" rel="noopener">Enrol on Udemy</a>
+      </div>
+      <a class="still" href="https://www.udemy.com/course/transform-your-home-with-biophilic-design-beginners-guide/" target="_blank" rel="noopener" aria-label="Preview the course on Udemy">
+        <img src="img/course-still.jpg" width="750" height="422" alt="William Ringsdorf presenting the course in a room of plants and pendant lamps" loading="lazy">
+        <span>Preview on Udemy</span>
+      </a>
+    </div>
 
     <div class="cards">
-      <div class="card"><h3>Read a room first</h3><p>Sit in it and read it before you buy anything for it. The room audit, from Lesson 1 onwards.</p></div>
-      <div class="card"><h3>More daylight</h3><p>Get more from the windows you already have, and put the light where you need it.</p></div>
-      <div class="card"><h3>Plants and materials</h3><p>Choose plants and natural materials that suit the room and the people in it, and keep them alive.</p></div>
-      <div class="card"><h3>A plan for the whole home</h3><p>Build a palette from what is outside the window, make one restorative corner on a small budget, then put it together.</p></div>
+      <div class="card">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 40V12l16-6 16 6v28"/><path d="M8 40h32"/><path d="M24 40V24"/><path d="M14 40v-9h8v9M26 40v-9h8v9"/></svg>
+        <h3>Read a room first</h3><p>Sit in it and read it before you buy anything for it. The room audit, from Lesson 1 onwards.</p></div>
+      <div class="card">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="10" y="8" width="28" height="32" rx="1"/><path d="M24 8v32M10 24h28"/><path d="M4 44l9-9M44 44l-9-9"/></svg>
+        <h3>More daylight</h3><p>Get more from the windows you already have, and put the light where you need it.</p></div>
+      <div class="card">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 38C10 22 20 10 38 10c0 18-12 28-28 28z"/><path d="M10 38c6-10 12-16 22-22"/></svg>
+        <h3>Plants and materials</h3><p>Choose plants and natural materials that suit the room and the people in it, and keep them alive.</p></div>
+      <div class="card">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 24L24 8l18 16"/><path d="M11 20v20h26V20"/><path d="M19 40V28h10v12"/><circle cx="34" cy="30" r="3"/></svg>
+        <h3>A plan for the whole home</h3><p>Build a palette from what is outside the window, make one restorative corner on a small budget, then put it together.</p></div>
     </div>
 
     <h3>The ten lessons</h3>
@@ -184,9 +236,35 @@
 
     <h3>Who it is for</h3>
     <p>Homeowners and renters with no design background who want a calmer and healthier home, and are willing to do a little noticing before a little buying. Not for anyone after quick styling tips.</p>
-    <p class="proof">Rated 4.6 out of 5 by its first students on Udemy.</p>
     <a class="btn" href="https://www.udemy.com/course/transform-your-home-with-biophilic-design-beginners-guide/" target="_blank" rel="noopener">Enrol on Udemy</a>
     <p class="small">Prefer to ask first? <a href="#contact">Use the form below</a>.</p>
+  </div>
+</section>
+
+<section class="white">
+  <div class="wrap">
+    <p class="eyebrow">What students say</p>
+    <h2>From the Udemy reviews</h2>
+    <p class="proof">Written by students on Udemy, quoted as they wrote them. Shortened where marked.</p>
+    <div class="quotes">
+      <blockquote class="quote">
+        <p>After completing the introduction I can't wait to continue. The content in this course is amazing and the resources available are above and beyond. Exceptional value for money.</p>
+        <cite><span class="stars" aria-label="5 stars"><svg viewBox="0 0 24 24"><path fill="#C9A646" d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path fill="#C9A646" d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path fill="#C9A646" d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path fill="#C9A646" d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path fill="#C9A646" d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg></span> Merredith H., January 2025</cite>
+      </blockquote>
+      <blockquote class="quote">
+        <p>I really enjoyed this course. It was very informative and easy to understand. It really helped me understand biophilic design and how to create it in my spaces.</p>
+        <cite><span class="stars" aria-label="5 stars"><svg viewBox="0 0 24 24"><path fill="#C9A646" d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path fill="#C9A646" d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path fill="#C9A646" d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path fill="#C9A646" d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path fill="#C9A646" d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg></span> Desiree E., April 2025</cite>
+      </blockquote>
+      <blockquote class="quote">
+        <p>Introducing the concepts in an orderly manner and doing so, from the point of view of someone that not only knows about the subject matter, but has worked with it. Very happy so far.</p>
+        <cite><span class="stars" aria-label="5 stars"><svg viewBox="0 0 24 24"><path fill="#C9A646" d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path fill="#C9A646" d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path fill="#C9A646" d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path fill="#C9A646" d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path fill="#C9A646" d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg></span> Hans H., December 2025 (shortened)</cite>
+      </blockquote>
+      <blockquote class="quote">
+        <p>Super insightful, highly exceeded my expectations. I wish there would be more of William's courses, to deepen our knowledge.</p>
+        <cite><span class="stars" aria-label="5 stars"><svg viewBox="0 0 24 24"><path fill="#C9A646" d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path fill="#C9A646" d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path fill="#C9A646" d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path fill="#C9A646" d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path fill="#C9A646" d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg></span> Vivien K., February 2025 (shortened)</cite>
+      </blockquote>
+    </div>
+    <p class="small">All reviews are on the <a href="https://www.udemy.com/course/transform-your-home-with-biophilic-design-beginners-guide/#reviews" target="_blank" rel="noopener">course page on Udemy</a>.</p>
   </div>
 </section>
 
@@ -199,7 +277,10 @@
       <p>Into the Nest is where that experience is turned towards homeowners: the course, the weekly Heartsease letter, and the occasional conversation about a home that does not feel right yet.</p>
       <p><a class="textlink" href="https://www.heartseasehome.com" target="_blank" rel="noopener">Read Heartsease, the weekly letter</a></p>
     </div>
-    <div class="portrait" aria-hidden="true">Home designer · 30 years in architectural practice · UK and Germany</div>
+    <div class="portrait">
+      <img src="img/portrait.jpg" width="300" height="375" alt="William Ringsdorf">
+      <span>Home designer · 30 years in architectural practice · UK and Germany</span>
+    </div>
   </div>
 </section>
 
