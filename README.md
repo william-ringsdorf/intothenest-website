@@ -8,3 +8,5 @@ Single-page static site for Into The Nest Ltd, hosted on Cloudflare Pages. No bu
 - Contact form: GoHighLevel embed (Communitee.ai account, Into the Nest sub-account); replace the fallback block in `index.html` with the form iframe.
 
 Copy rules: British English, no em-dashes, no exclamation marks, no "architect" as a self-description.
+
+Live at https://intothenest.net since 26 Oct 2026 (Cloudflare Pages, nameservers amit/gigi).
